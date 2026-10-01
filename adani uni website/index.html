@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adani University | Shantigram, Ahmedabad - Crisp Modern Experience</title>
+  <meta name="description" content="Official website of Adani University, Shantigram, Ahmedabad. Established in 2022 by the Adani Foundation, offering next-gen programs across FEST, FMS, FoS, and DDS with 95%+ placement record and world-class 115-acre infrastructure.">
+  <meta name="keywords" content="Adani University, Shantigram, Ahmedabad, FEST, FMS, FoS, DDS, B.Tech AI-ML, ICT, MBA Infrastructure Management, Gautam Adani, Dr. Priti Adani, Placements">
+  
+  <!-- Modern Typography (Plus Jakarta Sans, Outfit, Space Grotesk) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon / Official Emblem -->
+  <link rel="icon" type="image/png" href="assets/images/official-logo.png">
+</head>
+<body>
+
+  <!-- Custom Minimalist Cursor -->
+  <div class="custom-cursor-dot" id="cursorDot"></div>
+  <div class="custom-cursor-ring" id="cursorRing"></div>
+
+  <!-- Confetti Celebration Canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- ==========================================================================
+       TOP NOTICE BAR
+       ========================================================================== -->
+  <div class="top-notice-bar">
+    <div class="container top-notice-container">
+      <div>
+        <span>📍 <strong>Campus:</strong> Shantigram Township, Near Vaishnodevi Circle, S.G. Highway, Ahmedabad - 382421, Gujarat</span>
+      </div>
+      <ul class="top-notice-links">
+        <li><a href="https://www.adaniuni.ac.in/" target="_blank" rel="noopener">Official Portal</a></li>
+        <li><a href="#admissions">Admissions 2025-26</a></li>
+        <li><a href="#placements">Placement Conclave</a></li>
+        <li><a href="#contact">Contact Desk</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Official Logo Brand Group -->
+      <a href="#hero" class="nav-brand-group" title="Adani University Homepage">
+        <img src="assets/images/official-logo.png" alt="Adani University Official Seal" class="official-logo-img">
+        <div class="brand-divider"></div>
+        <div class="brand-location-box">
+          <span class="brand-shantigram-tag">Shantigram Campus</span>
+          <span class="brand-state-badge">Ahmedabad, Gujarat</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#roots" class="nav-link">The Roots</a></li>
+        <li><a href="#faculties" class="nav-link">Faculties</a></li>
+        <li><a href="#campus" class="nav-link">Campus & Facilities</a></li>
+        <li><a href="#fuel-hub" class="nav-link">Food & Hangout</a></li>
+        <li><a href="#programs" class="nav-link">Programs</a></li>
+        <li><a href="#placements" class="nav-link">Placements</a></li>
+        <li><a href="#calculator" class="nav-link">CGPA Tool</a></li>
+        <li><a href="#quiz" class="nav-link">Program Quiz</a></li>
+      </ul>
+
+      <!-- Nav Actions (Sound Toggle & Admissions CTA) -->
+      <div class="nav-actions">
+        <button class="sound-toggle-btn" id="soundToggleBtn" title="Sound Effects Enabled" aria-label="Toggle sound effects">
+          🔊
+        </button>
+        <a href="#programs" class="btn btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.85rem;">
+          Explore Programs
+        </a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open mobile navigation">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/official-logo.png" alt="Adani University" style="height: 38px;">
+      <button id="closeMobileDrawer" style="background:none; border:none; color:var(--text-primary); font-size:1.5rem; cursor:pointer;">✕</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#roots" class="mobile-nav-link">The Roots & Founders</a></li>
+      <li><a href="#faculties" class="mobile-nav-link">Academic Faculties (FEST, FMS, FoS, DDS)</a></li>
+      <li><a href="#campus" class="mobile-nav-link">Campus & World-Class Facilities</a></li>
+      <li><a href="#fuel-hub" class="mobile-nav-link">The Fuel Hub (Food & Hangouts)</a></li>
+      <li><a href="#programs" class="mobile-nav-link">Academic Programs & Specializations</a></li>
+      <li><a href="#placements" class="mobile-nav-link">Placements & Corporate Partners</a></li>
+      <li><a href="#life" class="mobile-nav-link">Campus Life & Convocations</a></li>
+      <li><a href="#calculator" class="mobile-nav-link">CGPA Calculator & Benchmarker</a></li>
+      <li><a href="#quiz" class="mobile-nav-link">Find Your Ideal Program Quiz</a></li>
+    </ul>
+    <div style="margin-top:auto; padding-top:1.5rem; border-top:1px solid var(--border-light);">
+      <a href="https://www.adaniuni.ac.in/" target="_blank" rel="noopener" class="btn btn-gold" style="width:100%;">
+        Visit Official Portal ↗
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-row">
+            <span class="hero-pill">🏛️ State Private University · Est. 2022</span>
+            <span class="hero-pill" style="background:var(--brand-gold-subtle); color:var(--brand-gold); border-color:var(--border-gold);">⭐ Adani Foundation Legacy</span>
+          </div>
+          <h1 class="hero-h1">
+            Empowering Minds for <span class="gradient-title">Nation Building</span> & Global Leadership.
+          </h1>
+          <p class="hero-lead">
+            Welcome to Adani University, located within the sprawling 115-acre Shantigram Township in Ahmedabad. Grounded in the philanthropic vision of the <strong>Adani Foundation</strong> and guided by <em>"Growth with Goodness"</em>, we prepare future-ready engineers, data innovators, and infrastructure leaders.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#programs" class="btn btn-primary">
+              View Academic Programs ▹
+            </a>
+            <a href="#calculator" class="btn btn-outline">
+              Interactive CGPA Calculator 🧮
+            </a>
+            <a href="#quiz" class="btn btn-gold">
+              Take Program Quiz 🎯
+            </a>
+          </div>
+        </div>
+
+        <!-- Real Campus Hero Visual -->
+        <div class="hero-visual-card">
+          <div class="hero-image-wrap">
+            <img src="assets/images/real-campus.jpg" alt="Adani University Campus at Shantigram, Ahmedabad" loading="eager">
+          </div>
+          <div class="hero-visual-caption">
+            <div class="hero-caption-title">Adani University Campus at Shantigram</div>
+            <div class="hero-caption-sub">Near Vaishnodevi Circle, S.G. Highway, Ahmedabad - 382421, Gujarat</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Authentic Metrics Strip -->
+      <div class="hero-stats-strip">
+        <div class="stat-item">
+          <div class="stat-num"><span class="stat-counter" data-target="95">95</span>%<span>+</span></div>
+          <div class="stat-desc">Placement Track Record</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span>₹</span><span class="stat-counter" data-target="15">15</span><span>+</span> LPA</div>
+          <div class="stat-desc">Highest Package Offered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="stat-counter" data-target="80">80</span><span>+</span></div>
+          <div class="stat-desc">Top-Tier Corporate Recruiters</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="stat-counter" data-target="115">115</span><span>+</span></div>
+          <div class="stat-desc">Acre Shantigram Eco-Township</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 1: THE ROOTS & INCEPTION (AUTHENTIC FOUNDATION)
+       ========================================================================== -->
+  <section class="section-padding" id="roots">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag gold-tag">Historical Legacy & Mission</span>
+        <h2 class="section-title">Rooted in Nation Building & Purpose</h2>
+        <p class="section-desc">
+          Established in 2022 as a State Private University in Gujarat, Adani University carries forward the educational legacy of the Adani Foundation, transforming young intellect into nation builders.
+        </p>
+      </div>
+
+      <div class="inception-card">
+        <div class="inception-inner-grid">
+          <div class="inception-text">
+            <h3>Vision of "Growth with Goodness"</h3>
+            <p>
+              Adani University was established under the Gujarat Private Universities Act, rooted firmly in the educational initiatives fostered by the <strong>Adani Foundation</strong>. Built upon the distinguished legacy of the Adani Institute of Infrastructure Management (AIIM), the university provides an environment where real-world industry immersion meets cutting-edge academic rigor.
+            </p>
+            <p>
+              Our pedagogical philosophy is inspired by Mr. Gautam Adani’s vision of nation building and infrastructure resilience, combined with Dr. Priti Adani’s dedication to transformative social empowerment through holistic education.
+            </p>
+            <div class="quote-box">
+              "Education must not simply be about imparting theoretical concepts; it must kindle the spirit of nation building, civic responsibility, and sustainable industrial growth."
+              <div style="margin-top:0.5rem; font-weight:700; font-size:0.85rem; color:var(--brand-primary); font-style:normal;">
+                — Dr. Priti Adani, Chairperson, Adani Foundation
+              </div>
+            </div>
+          </div>
+
+          <div class="leaders-col">
+            <div class="leader-item">
+              <div class="leader-avatar-circle">GA</div>
+              <div class="leader-info">
+                <h4>Mr. Gautam Adani</h4>
+                <p>President & Founder · Adani Group</p>
+                <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.2rem;">Inspiring the core ethos of Nation Building & Infrastructure Development</div>
+              </div>
+            </div>
+
+            <div class="leader-item">
+              <div class="leader-avatar-circle gold">PA</div>
+              <div class="leader-info">
+                <h4>Dr. Priti Adani</h4>
+                <p>Chairperson · Adani Foundation</p>
+                <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.2rem;">Championing holistic social growth, inclusive learning, and research excellence</div>
+              </div>
+            </div>
+
+            <div class="leader-item">
+              <div class="leader-avatar-circle" style="background-color: var(--brand-navy);">AU</div>
+              <div class="leader-info">
+                <h4>State Private University</h4>
+                <p>Established 2022 · Government of Gujarat</p>
+                <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.2rem;">UGC-recognized statutory framework with FEST, FMS, FoS & DDS faculties</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: OFFICIAL ACADEMIC FACULTIES (FEST, FMS, FoS, DDS)
+       ========================================================================== -->
+  <section class="section-padding section-bg-surface" id="faculties">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">University Academic Structure</span>
+        <h2 class="section-title">Four Distinguish Faculties</h2>
+        <p class="section-desc">
+          Structured precisely as outlined on the official portal, offering specialized undergraduate, integrated postgraduate, and doctoral degrees.
+        </p>
+      </div>
+
+      <div class="faculties-strip">
+        <!-- FEST -->
+        <div class="faculty-pill-card">
+          <div class="faculty-abbr">FEST</div>
+          <div class="faculty-name">Faculty of Engineering Sciences & Technology</div>
+          <div class="faculty-desc">
+            Pioneering engineering disciplines in Computer Science (AI-ML), Information & Communication Technology (ICT), Civil & Infrastructure, and Construction Engineering & Management.
+          </div>
+          <div style="margin-top:auto; padding-top:1rem;">
+            <a href="#programs" class="btn btn-outline" style="padding:0.45rem 0.85rem; font-size:0.8rem; width:100%;">Explore FEST ▹</a>
+          </div>
+        </div>
+
+        <!-- FMS -->
+        <div class="faculty-pill-card">
+          <div class="faculty-abbr" style="color:var(--brand-gold);">FMS</div>
+          <div class="faculty-name">Faculty of Management Sciences</div>
+          <div class="faculty-desc">
+            Home to the flagship MBA in Infrastructure Management, project capital financing, public-private partnerships (PPP), supply chain logistics, and ESG corporate governance.
+          </div>
+          <div style="margin-top:auto; padding-top:1rem;">
+            <a href="#programs" class="btn btn-outline" style="padding:0.45rem 0.85rem; font-size:0.8rem; width:100%;">Explore FMS ▹</a>
+          </div>
+        </div>
+
+        <!-- FoS -->
+        <div class="faculty-pill-card">
+          <div class="faculty-abbr" style="color:var(--brand-blue-accent);">FoS</div>
+          <div class="faculty-name">Faculty of Sciences</div>
+          <div class="faculty-desc">
+            Integrating advanced applied mathematics, computational statistics, data science, and cloud computing methodologies with rigorous scientific experimentation.
+          </div>
+          <div style="margin-top:auto; padding-top:1rem;">
+            <a href="#programs" class="btn btn-outline" style="padding:0.45rem 0.85rem; font-size:0.8rem; width:100%;">Explore FoS ▹</a>
+          </div>
+        </div>
+
+        <!-- DDS -->
+        <div class="faculty-pill-card">
+          <div class="faculty-abbr" style="color:#059669;">DDS</div>
+          <div class="faculty-name">Department of Doctoral Studies</div>
+          <div class="faculty-desc">
+            Interdisciplinary Ph.D. research fellowships across engineering, sustainable energy, project management, and applied sciences with direct access to Adani industrial labs.
+          </div>
+          <div style="margin-top:auto; padding-top:1rem;">
+            <a href="#programs" class="btn btn-outline" style="padding:0.45rem 0.85rem; font-size:0.8rem; width:100%;">Explore DDS ▹</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: CAMPUS FEATURES & REAL PHOTOGRAPHY ASSETS
+       ========================================================================== -->
+  <section class="section-padding" id="campus">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag gold-tag">Real Photography · World-Class Infrastructure</span>
+        <h2 class="section-title">Explore Shantigram Campus Facilities</h2>
+        <p class="section-desc">
+          Take an interactive tour of the genuine physical facilities at Adani University. Built to foster collaborative exploration, deep technical research, and executive learning.
+        </p>
+      </div>
+
+      <!-- Facility Category Filter Tabs -->
+      <div class="filter-tabs-row">
+        <button class="facility-filter-btn filter-tab-btn active" data-filter="all">All Facilities (6)</button>
+        <button class="facility-filter-btn filter-tab-btn" data-filter="academic">Academic & Tech (2)</button>
+        <button class="facility-filter-btn filter-tab-btn" data-filter="learning">Libraries & Halls (2)</button>
+        <button class="facility-filter-btn filter-tab-btn" data-filter="wellness">Sports & Green Lawns (2)</button>
+      </div>
+
+      <!-- Facility Cards Grid -->
+      <div class="facility-grid">
+        <!-- 1. Smart Classrooms -->
+        <div class="facility-card" data-category="academic">
+          <div class="facility-card-img-wrap">
+            <img src="assets/images/real-classroom.jpg" alt="Smart Classrooms at Adani University" loading="lazy">
+            <span class="facility-badge-tag">Academic · Executive Tiered</span>
+          </div>
+          <div class="facility-card-body">
+            <h3 class="facility-card-title">Executive Smart Classrooms</h3>
+            <p class="facility-card-desc">
+              Ergonomically tiered lecture halls equipped with dual interactive touch displays, hybrid lecture capture, and high-speed campus connectivity for interactive case studies.
+            </p>
+            <div class="facility-card-specs">
+              <span class="spec-pill">Air-Conditioned</span>
+              <span class="spec-pill">Dual 4K Displays</span>
+              <span class="spec-pill">Acoustic Treatment</span>
+            </div>
+            <div class="facility-card-footer">
+              <button class="btn btn-outline open-facility-btn" data-facility="classroom" style="width:100%; font-size:0.85rem;">
+                View Facility Details 🔍
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Computing Labs -->
+        <div class="facility-card" data-category="academic">
+          <div class="facility-card-img-wrap">
+            <img src="assets/images/real-hackathon.jpg" alt="Computing & R&D Labs at Adani University" loading="lazy">
+            <span class="facility-badge-tag">Research · FEST Labs</span>
+          </div>
+          <div class="facility-card-body">
+            <h3 class="facility-card-title">Advanced Computing & AI Labs</h3>
+            <p class="facility-card-desc">
+              Dedicated high-throughput GPU clusters supporting deep neural network development, cloud engineering microservices, and student hackathons.
+            </p>
+            <div class="facility-card-specs">
+              <span class="spec-pill">NVIDIA Workstations</span>
+              <span class="spec-pill">IoT Testbeds</span>
+              <span class="spec-pill">BEE Electronics Lab</span>
+            </div>
+            <div class="facility-card-footer">
+              <button class="btn btn-outline open-facility-btn" data-facility="labs" style="width:100%; font-size:0.85rem;">
+                View Facility Details 🔍
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Central Library -->
+        <div class="facility-card" data-category="learning">
+          <div class="facility-card-img-wrap">
+            <img src="assets/images/real-library.jpg" alt="Central Library at Adani University" loading="lazy">
+            <span class="facility-badge-tag">Knowledge Hub · 50K+ Resources</span>
+          </div>
+          <div class="facility-card-body">
+            <h3 class="facility-card-title">Automated Central Library</h3>
+            <p class="facility-card-desc">
+              Spans multiple quiet research floors with KOHA library automation, RFID systems, individual study pods, and institutional borrowing rights with IIM Ahmedabad and IITGN.
+            </p>
+            <div class="facility-card-specs">
+              <span class="spec-pill">KOHA Automation</span>
+              <span class="spec-pill">IIMA / IITGN Tie-ups</span>
+              <span class="spec-pill">DELNET Access</span>
+            </div>
+            <div class="facility-card-footer">
+              <button class="btn btn-outline open-facility-btn" data-facility="library" style="width:100%; font-size:0.85rem;">
+                View Facility Details 🔍
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Auditorium -->
+        <div class="facility-card" data-category="learning">
+          <div class="facility-card-img-wrap">
+            <img src="assets/images/real-auditorium.jpg" alt="Auditorium at Adani University" loading="lazy">
+            <span class="facility-badge-tag">Conventions · 300 Seats</span>
+          </div>
+          <div class="facility-card-body">
+            <h3 class="facility-card-title">300-Seater Auditorium</h3>
+            <p class="facility-card-desc">
+              Acoustically tuned convention auditorium hosting international symposiums, industry leadership summits, cultural fests, and Adani CXO guest lectures.
+            </p>
+            <div class="facility-card-specs">
+              <span class="spec-pill">Surround Acoustics</span>
+              <span class="spec-pill">4K Laser Cinema</span>
+              <span class="spec-pill">Green Rooms</span>
+            </div>
+            <div class="facility-card-footer">
+              <button class="btn btn-outline open-facility-btn" data-facility="auditorium" style="width:100%; font-size:0.85rem;">
+                View Facility Details 🔍
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Sports Complex -->
+        <div class="facility-card" data-category="wellness">
+          <div class="facility-card-img-wrap">
+            <img src="assets/images/real-sports.jpg" alt="Indoor Sports Complex at Adani University" loading="lazy">
+            <span class="facility-badge-tag">Wellness & Athletics</span>
+          </div>
+          <div class="facility-card-body">
+            <h3 class="facility-card-title">Indoor Sports Complex</h3>
+            <p class="facility-card-desc">
+              Featuring professional wooden badminton courts, table tennis arenas, chess lounges, and access to Shantigram township outdoor cricket grounds.
+            </p>
+            <div class="facility-card-specs">
+              <span class="spec-pill">Wooden Badminton</span>
+              <span class="spec-pill">Table Tennis</span>
+              <span class="spec-pill">Fitness Gym</span>
+            </div>
+            <div class="facility-card-footer">
+              <button class="btn btn-outline open-facility-btn" data-facility="sports" style="width:100%; font-size:0.85rem;">
+                View Facility Details 🔍
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Shantigram Lawns -->
+        <div class="facility-card" data-category="wellness">
+          <div class="facility-card-img-wrap">
+            <img src="assets/images/real-lawns.jpg" alt="Lush Green Lawns at Shantigram Township" loading="lazy">
+            <span class="facility-badge-tag">115-Acre Eco-Township</span>
+          </div>
+          <div class="facility-card-body">
+            <h3 class="facility-card-title">Shantigram Green Lawns</h3>
+            <p class="facility-card-desc">
+              Serene lakeside pathways, shaded outdoor discussion benches, and open air study zones situated within the sustainable smart township of Shantigram.
+            </p>
+            <div class="facility-card-specs">
+              <span class="spec-pill">80% Green Canopy</span>
+              <span class="spec-pill">Discussion Benches</span>
+              <span class="spec-pill">Solar Powered</span>
+            </div>
+            <div class="facility-card-footer">
+              <button class="btn btn-outline open-facility-btn" data-facility="lawns" style="width:100%; font-size:0.85rem;">
+                View Facility Details 🔍
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: THE FUEL HUB & FOOD FINDER (INTERACTIVE)
+       ========================================================================== -->
+  <section class="section-padding section-bg-surface" id="fuel-hub">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag gold-tag">Campus Hangout & Food Finder</span>
+        <h2 class="section-title">The Fuel Hub: Eat, Connect & Relax</h2>
+        <p class="section-desc">
+          Explore genuine campus dining options, quick-bite canteens, grab-and-go spots, and student social areas across Adani Shantigram township.
+        </p>
+      </div>
+
+      <!-- Food Category Filter Buttons -->
+      <div class="filter-tabs-row">
+        <button class="food-filter-btn filter-tab-btn active" data-food-type="all">All Dining Spots (4)</button>
+        <button class="food-filter-btn filter-tab-btn" data-food-type="cafe">Barista & Coffee Counters (2)</button>
+        <button class="food-filter-btn filter-tab-btn" data-food-type="meals">Canteens & Full Meals (1)</button>
+        <button class="food-filter-btn filter-tab-btn" data-food-type="grab">Grab & Go Kiosks (1)</button>
+      </div>
+
+      <!-- Food Spot Cards Grid -->
+      <div class="fuel-hub-grid">
+        <!-- 1. Barista Coffee Bar -->
+        <div class="food-spot-card" data-type="cafe">
+          <img src="assets/images/real-cafe.jpg" alt="Barista Coffee Counter" class="food-spot-img" loading="lazy">
+          <div class="food-spot-body">
+            <h4 class="food-spot-title">The Central Barista Lounge</h4>
+            <p class="food-spot-desc">Artisanal cappuccinos, iced lattes, and fresh bakery cookies right by the academic block lobby.</p>
+            <div class="food-spot-tags">
+              <span class="food-tag">☕ Specialty Coffee</span>
+              <span class="food-tag">🥐 Fresh Pastries</span>
+              <span class="food-tag">⏱️ 8 AM - 9 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Collegiate Dining Hall -->
+        <div class="food-spot-card" data-type="meals">
+          <img src="assets/images/real-dining.jpg" alt="Collegiate Dining Hall" class="food-spot-img" loading="lazy">
+          <div class="food-spot-body">
+            <h4 class="food-spot-title">Collegiate Food Court & Mess</h4>
+            <p class="food-spot-desc">Wholesome multi-cuisine buffet meals, live dosa counters, North & South Indian thalis prepared under strict hygiene standards.</p>
+            <div class="food-spot-tags">
+              <span class="food-tag">🍛 Thali Lunches</span>
+              <span class="food-tag">🥗 Fresh Salads</span>
+              <span class="food-tag">⏱️ 7:30 AM - 10 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Shantigram Lakeside Kiosks -->
+        <div class="food-spot-card" data-type="grab">
+          <img src="assets/images/real-lawns.jpg" alt="Outdoor Grab and Go Kiosk" class="food-spot-img" loading="lazy">
+          <div class="food-spot-body">
+            <h4 class="food-spot-title">Township Pavilion Kiosk</h4>
+            <p class="food-spot-desc">Quick grab-and-go toasted sandwiches, cold-pressed juices, and healthy fruit smoothies along the scenic promenade.</p>
+            <div class="food-spot-tags">
+              <span class="food-tag">🥪 Grilled Paninis</span>
+              <span class="food-tag">🥤 Fruit Juices</span>
+              <span class="food-tag">⏱️ 10 AM - 8 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Study Pod Cafe -->
+        <div class="food-spot-card" data-type="cafe">
+          <img src="assets/images/real-library.jpg" alt="Study Pod Cafe near Library" class="food-spot-img" loading="lazy">
+          <div class="food-spot-body">
+            <h4 class="food-spot-title">Library Coffee Pod</h4>
+            <p class="food-spot-desc">A quiet mezzanine coffee corner inside the library zone for late-evening study sessions and reading.</p>
+            <div class="food-spot-tags">
+              <span class="food-tag">🍵 Green Teas</span>
+              <span class="food-tag">🍪 Energy Bites</span>
+              <span class="food-tag">⏱️ 9 AM - 11 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: ACADEMIC PROGRAMS & CURRICULUM DRAWER
+       ========================================================================== -->
+  <section class="section-padding" id="programs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Degree Offerings · Authentic Portal Data</span>
+        <h2 class="section-title">Academic Programs & Specializations</h2>
+        <p class="section-desc">
+          Industry-aligned curricula designed with direct inputs from corporate CXOs across infrastructure, software, energy, and business management.
+        </p>
+      </div>
+
+      <!-- Search & Faculty Filter Controls -->
+      <div class="program-search-bar">
+        <span class="search-icon-pos">🔍</span>
+        <input type="text" id="programSearchInput" class="program-search-input" placeholder="Search by program name, faculty, or technology (e.g., AI-ML, Cloud, MBA, PPP)...">
+      </div>
+
+      <div class="filter-tabs-row" style="margin-bottom: 2.5rem;">
+        <button class="prog-filter-btn filter-tab-btn active" data-faculty="all">All Programs (8)</button>
+        <button class="prog-filter-btn filter-tab-btn" data-faculty="fest">FEST (Engineering & Tech)</button>
+        <button class="prog-filter-btn filter-tab-btn" data-faculty="fms">FMS (Management Sciences)</button>
+        <button class="prog-filter-btn filter-tab-btn" data-faculty="fos">FoS (Faculty of Sciences)</button>
+        <button class="prog-filter-btn filter-tab-btn" data-faculty="dds">DDS (Doctoral Studies)</button>
+      </div>
+
+      <!-- Programs Grid -->
+      <div class="programs-grid">
+        <!-- 1. B.Tech CSE (AI-ML) -->
+        <div class="program-card" data-faculty="fest">
+          <div class="program-card-header">
+            <span class="program-faculty-badge">FEST · UG</span>
+            <span class="program-duration">4 Years · Full Time</span>
+          </div>
+          <h3 class="program-title">B.Tech Computer Science & Engineering (AI-ML)</h3>
+          <p class="program-desc">
+            Deep focus on neural networks, natural language processing, computer vision, and high-performance computing clusters with practical industry capstones.
+          </p>
+          <div class="program-tags-list">
+            <span class="program-tech-tag">Deep Learning</span>
+            <span class="program-tech-tag">PyTorch</span>
+            <span class="program-tech-tag">Transformers</span>
+            <span class="program-tech-tag">GPU Computing</span>
+          </div>
+          <div class="program-card-actions">
+            <span style="font-size:0.85rem; font-weight:700; color:var(--brand-gold);">₹8.5 - 15+ LPA CTC</span>
+            <button class="btn btn-outline open-curriculum-btn" data-program="cse-aiml" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+              View Curriculum ▹
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. B.Tech ICT -->
+        <div class="program-card" data-faculty="fest">
+          <div class="program-card-header">
+            <span class="program-faculty-badge">FEST · UG</span>
+            <span class="program-duration">4 Years · Full Time</span>
+          </div>
+          <h3 class="program-title">B.Tech Information & Communication Technology (ICT)</h3>
+          <p class="program-desc">
+            Combines wireless communication, 5G architectures, edge computing, cyber defense, and telecommunication protocols for interconnected industries.
+          </p>
+          <div class="program-tags-list">
+            <span class="program-tech-tag">5G/6G Networks</span>
+            <span class="program-tech-tag">Edge IoT</span>
+            <span class="program-tech-tag">Cyber Defense</span>
+            <span class="program-tech-tag">DevOps</span>
+          </div>
+          <div class="program-card-actions">
+            <span style="font-size:0.85rem; font-weight:700; color:var(--brand-gold);">₹7.5 - 14 LPA CTC</span>
+            <button class="btn btn-outline open-curriculum-btn" data-program="ict" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+              View Curriculum ▹
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Integrated B.Tech Civil + MBA -->
+        <div class="program-card" data-faculty="fest">
+          <div class="program-card-header">
+            <span class="program-faculty-badge fms">FEST + FMS Dual</span>
+            <span class="program-duration">5 Years · Integrated</span>
+          </div>
+          <h3 class="program-title">Integrated B.Tech Civil & Infra + MBA Project Management</h3>
+          <p class="program-desc">
+            Fast-track leadership program combining structural engineering and BIM with large-scale EPC capital budgeting, tendering, and Adani mega-project immersion.
+          </p>
+          <div class="program-tags-list">
+            <span class="program-tech-tag">BIM Modeling</span>
+            <span class="program-tech-tag">PPP Contracts</span>
+            <span class="program-tech-tag">Primavera P6</span>
+            <span class="program-tech-tag">Port & Highway EPC</span>
+          </div>
+          <div class="program-card-actions">
+            <span style="font-size:0.85rem; font-weight:700; color:var(--brand-gold);">₹8.0 - 15+ LPA CTC</span>
+            <button class="btn btn-outline open-curriculum-btn" data-program="civil-mba" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+              View Curriculum ▹
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Integrated B.Tech CSAM + M.Tech -->
+        <div class="program-card" data-faculty="fos">
+          <div class="program-card-header">
+            <span class="program-faculty-badge" style="background:#EEF2FF; color:#4338CA; border-color:#C7D2FE;">FoS + FEST Dual</span>
+            <span class="program-duration">5 Years · Integrated</span>
+          </div>
+          <h3 class="program-title">Integrated B.Tech CS & Applied Math + M.Tech Cloud</h3>
+          <p class="program-desc">
+            Quantitative computing, stochastic modeling, numerical algorithms, multi-cloud infrastructure orchestration, and algorithmic finance.
+          </p>
+          <div class="program-tags-list">
+            <span class="program-tech-tag">Applied Math</span>
+            <span class="program-tech-tag">Kubernetes</span>
+            <span class="program-tech-tag">Cloud Native</span>
+            <span class="program-tech-tag">Algo Trading</span>
+          </div>
+          <div class="program-card-actions">
+            <span style="font-size:0.85rem; font-weight:700; color:var(--brand-gold);">₹8.5 - 15+ LPA CTC</span>
+            <button class="btn btn-outline open-curriculum-btn" data-program="csam-mtech" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+              View Curriculum ▹
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Integrated B.Tech Energy + MBA -->
+        <div class="program-card" data-faculty="fest">
+          <div class="program-card-header">
+            <span class="program-faculty-badge fms">FEST + FMS Dual</span>
+            <span class="program-duration">5 Years · Integrated</span>
+          </div>
+          <h3 class="program-title">Integrated B.Tech Energy Engg + MBA Energy Management</h3>
+          <p class="program-desc">
+            Engineered for India's clean energy revolution: solar, wind, green hydrogen generation, battery storage systems, and carbon credit trading models.
+          </p>
+          <div class="program-tags-list">
+            <span class="program-tech-tag">Green Hydrogen</span>
+            <span class="program-tech-tag">Solar Photovoltaic</span>
+            <span class="program-tech-tag">Carbon Trading</span>
+            <span class="program-tech-tag">Khavda Immersion</span>
+          </div>
+          <div class="program-card-actions">
+            <span style="font-size:0.85rem; font-weight:700; color:var(--brand-gold);">₹8.0 - 14.5 LPA CTC</span>
+            <button class="btn btn-outline open-curriculum-btn" data-program="energy-mba" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+              View Curriculum ▹
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. MBA in Infrastructure Management -->
+        <div class="program-card" data-faculty="fms">
+          <div class="program-card-header">
+            <span class="program-faculty-badge fms">FMS · Flagship PG</span>
+            <span class="program-duration">2 Years · Full Time</span>
+          </div>
+          <h3 class="program-title">MBA in Infrastructure Management</h3>
+          <p class="program-desc">
+            The premier national postgraduate program preparing executives for aviation, seaport logistics, energy concession frameworks, and smart infrastructure financing.
+          </p>
+          <div class="program-tags-list">
+            <span class="program-tech-tag">Infra Financing</span>
+            <span class="program-tech-tag">Port & Airport Econ</span>
+            <span class="program-tech-tag">ESG Compliance</span>
+            <span class="program-tech-tag">CXO Mentorship</span>
+          </div>
+          <div class="program-card-actions">
+            <span style="font-size:0.85rem; font-weight:700; color:var(--brand-gold);">₹8.5 - 15+ LPA CTC</span>
+            <button class="btn btn-outline open-curriculum-btn" data-program="mba-infra" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+              View Curriculum ▹
+            </button>
+          </div>
+        </div>
+
+        <!-- 7. M.Tech CEM -->
+        <div class="program-card" data-faculty="fest">
+          <div class="program-card-header">
+            <span class="program-faculty-badge">FEST · PG</span>
+            <span class="program-duration">2 Years · Full Time</span>
+          </div>
+          <h3 class="program-title">M.Tech Construction Engineering & Management</h3>
+          <p class="program-desc">
+            Advanced lean construction, precast technologies, construction robotics, international FIDIC dispute resolution, and large-scale site safety management.
+          </p>
+          <div class="program-tags-list">
+            <span class="program-tech-tag">Lean Construction</span>
+            <span class="program-tech-tag">FIDIC Contracts</span>
+            <span class="program-tech-tag">Automation</span>
+            <span class="program-tech-tag">Adani Infra R&D</span>
+          </div>
+          <div class="program-card-actions">
+            <span style="font-size:0.85rem; font-weight:700; color:var(--brand-gold);">₹7.5 - 13 LPA CTC</span>
+            <button class="btn btn-outline open-curriculum-btn" data-program="mtech-cem" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+              View Curriculum ▹
+            </button>
+          </div>
+        </div>
+
+        <!-- 8. Ph.D. Programs (DDS) -->
+        <div class="program-card" data-faculty="dds">
+          <div class="program-card-header">
+            <span class="program-faculty-badge" style="background:#ECFDF5; color:#065F46; border-color:#A7F3D0;">DDS · Doctoral</span>
+            <span class="program-duration">3 - 5 Years · Research</span>
+          </div>
+          <h3 class="program-title">Ph.D. Doctoral Research Programs</h3>
+          <p class="program-desc">
+            Fully sponsored doctoral fellowships across FEST, FMS, and FoS with access to Adani industrial plants, proprietary data lakes, and international publication stipends.
+          </p>
+          <div class="program-tags-list">
+            <span class="program-tech-tag">Funded Fellowships</span>
+            <span class="program-tech-tag">Industrial Labs</span>
+            <span class="program-tech-tag">Patents & IPR</span>
+            <span class="program-tech-tag">Scopus Indexed</span>
+          </div>
+          <div class="program-card-actions">
+            <span style="font-size:0.85rem; font-weight:700; color:var(--brand-primary);">Monthly Stipend + Grants</span>
+            <button class="btn btn-outline open-curriculum-btn" data-program="dds-phd" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+              View Curriculum ▹
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: PLACEMENTS & RECRUITERS (AUTHENTIC PORTAL DATA)
+       ========================================================================== -->
+  <section class="section-padding section-bg-surface" id="placements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag gold-tag">Career Outcomes · Official Portal Statistics</span>
+        <h2 class="section-title">Industry Endorsement & Stellar Placements</h2>
+        <p class="section-desc">
+          Adani University students secure lucrative opportunities across the Big 4, top technology firms, energy giants, and the Adani conglomerate's national infrastructure divisions.
+        </p>
+      </div>
+
+      <!-- Placement KPI Banner -->
+      <div class="placement-kpi-banner">
+        <div class="placement-kpi-item">
+          <div class="kpi-big-num">95<span>%+</span></div>
+          <div class="kpi-label">Consistent Placement Record</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.4rem;">Across all graduating FEST & FMS cohorts</p>
+        </div>
+        <div class="placement-kpi-item">
+          <div class="kpi-big-num">15<span>+</span> LPA</div>
+          <div class="kpi-label">Highest Package Offered</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.4rem;">For top tech, cloud & infrastructure roles</p>
+        </div>
+        <div class="placement-kpi-item">
+          <div class="kpi-big-num">80<span>+</span></div>
+          <div class="kpi-label">Corporate Recruiter Network</div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.4rem;">Fortune 500 multinationals & domestic leaders</p>
+        </div>
+      </div>
+
+      <!-- Official Recruiter Showcase -->
+      <h3 style="text-align: center; margin-bottom: 1.5rem; font-size: 1.35rem; color: var(--brand-primary);">
+        Prominent Recruiting Partners
+      </h3>
+      <div class="recruiters-grid">
+        <div class="recruiter-pill-card">
+          <div class="recruiter-company-name">KPMG</div>
+          <div class="recruiter-domain-tag">Audit & Management Advisory</div>
+        </div>
+        <div class="recruiter-pill-card">
+          <div class="recruiter-company-name">EY</div>
+          <div class="recruiter-domain-tag">Infrastructure & Financial Services</div>
+        </div>
+        <div class="recruiter-pill-card">
+          <div class="recruiter-company-name">PwC</div>
+          <div class="recruiter-domain-tag">Global Tax & Strategic Consulting</div>
+        </div>
+        <div class="recruiter-pill-card">
+          <div class="recruiter-company-name">TCS</div>
+          <div class="recruiter-domain-tag">Digital Systems & Cloud Platforms</div>
+        </div>
+        <div class="recruiter-pill-card">
+          <div class="recruiter-company-name">IBM</div>
+          <div class="recruiter-domain-tag">AI, Enterprise Analytics & Hybrid Cloud</div>
+        </div>
+        <div class="recruiter-pill-card">
+          <div class="recruiter-company-name">Adani Green</div>
+          <div class="recruiter-domain-tag">Renewable Energy & Solar Parks</div>
+        </div>
+        <div class="recruiter-pill-card">
+          <div class="recruiter-company-name">Adani Ports (APSEZ)</div>
+          <div class="recruiter-domain-tag">Maritime & Multi-Modal Logistics</div>
+        </div>
+        <div class="recruiter-pill-card">
+          <div class="recruiter-company-name">Adani Wilmar</div>
+          <div class="recruiter-domain-tag">FMCG & Industrial Supply Chain</div>
+        </div>
+        <div class="recruiter-pill-card">
+          <div class="recruiter-company-name">L&T Infrastructure</div>
+          <div class="recruiter-domain-tag">Heavy Civil & EPC Construction</div>
+        </div>
+        <div class="recruiter-pill-card">
+          <div class="recruiter-company-name">Tata Power</div>
+          <div class="recruiter-domain-tag">Grid Modernization & Utilities</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: CAMPUS LIFE & REAL CONVOCATION / EVENTS
+       ========================================================================== -->
+  <section class="section-padding" id="life">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag gold-tag">Vibrant Student Life & Milestones</span>
+        <h2 class="section-title">Beyond the Lecture Halls</h2>
+        <p class="section-desc">
+          From high-energy cultural festivals to annual convocations and tech hackathons, experience authentic student life at Shantigram.
+        </p>
+      </div>
+
+      <!-- Spotlight: Real Convocation & Leadership -->
+      <div class="life-spotlight-card">
+        <img src="assets/images/real-convocation.jpg" alt="Official Convocation Ceremony at Adani University" class="life-spotlight-img" loading="lazy">
+        <div class="life-spotlight-content">
+          <span class="section-tag gold-tag" style="align-self: flex-start; margin-bottom: 0.75rem;">Annual Convocation</span>
+          <h3>Celebrating Academic Excellence & Industry Induction</h3>
+          <p>
+            Graduation ceremonies at Adani University celebrate years of diligence and technical mastery in the presence of national dignitaries, corporate CEOs, and academic scholars.
+          </p>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <div style="background:var(--bg-surface); padding:0.75rem 1rem; border-radius:var(--radius-sm); border:1px solid var(--border-light);">
+              <strong style="color:var(--brand-primary); font-size:1.1rem; display:block;">1,500+</strong>
+              <span style="font-size:0.75rem; color:var(--text-muted);">Proud Alumni Network</span>
+            </div>
+            <div style="background:var(--bg-surface); padding:0.75rem 1rem; border-radius:var(--radius-sm); border:1px solid var(--border-light);">
+              <strong style="color:var(--brand-gold); font-size:1.1rem; display:block;">100%</strong>
+              <span style="font-size:0.75rem; color:var(--text-muted);">Conglomerate Project Exposure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo Gallery (Real Photography Lightbox) -->
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="assets/images/real-cultural.jpg" alt="Adani University Cultural Fest" loading="lazy">
+          <div class="gallery-caption">
+            <h4>Annual Cultural Festival & Concerts</h4>
+            <p>Inter-collegiate music, dance, and creative drama celebrations.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="assets/images/real-internship.jpg" alt="Pragati Internship Conclave" loading="lazy">
+          <div class="gallery-caption">
+            <h4>Pragati Industry & Internship Conclave</h4>
+            <p>Live technical interactions with industry heads and HR directors.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="assets/images/real-sports.jpg" alt="Sports Complex & Tournament" loading="lazy">
+          <div class="gallery-caption">
+            <h4>Annual Shantigram Inter-College Cup</h4>
+            <p>High-stakes badminton, table tennis, football, and cricket matches.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: INTERACTIVE CGPA CALCULATOR & PEER BENCHMARKER
+       ========================================================================== -->
+  <section class="section-padding section-bg-surface" id="calculator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Academic Tool</span>
+        <h2 class="section-title">CGPA Calculator & Peer Benchmarker</h2>
+        <p class="section-desc">
+          Plan your academic standing, compute your Semester Grade Point Average (SGPA) / Cumulative CGPA, and benchmark your score against student archetypes.
+        </p>
+      </div>
+
+      <div class="calc-bench-grid">
+        <!-- Tool 1: Interactive CGPA Calculator -->
+        <div class="white-tool-card">
+          <div class="calc-header">
+            <div>
+              <h3>Semester GPA & CGPA Calculator</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.2rem;">Select your credits and expected grades</p>
+            </div>
+            <button id="addCourseBtn" class="btn btn-outline" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+              + Add Course
+            </button>
+          </div>
+
+          <!-- Presets Bar -->
+          <div class="presets-bar">
+            <span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--text-muted); align-self:center;">Load Preset:</span>
+            <button class="preset-chip" data-preset="fest">FEST (AI-ML / Tech)</button>
+            <button class="preset-chip" data-preset="fms">FMS (Infra Management)</button>
+            <button class="preset-chip" data-preset="fos">FoS (Applied Math / Cloud)</button>
+          </div>
+
+          <!-- Courses Table -->
+          <table class="clean-table">
+            <thead>
+              <tr>
+                <th style="width: 52%;">Course Subject</th>
+                <th style="width: 20%;">Credits</th>
+                <th style="width: 20%;">Grade</th>
+                <th style="width: 8%;"></th>
+              </tr>
+            </thead>
+            <tbody id="coursesTbody">
+              <tr>
+                <td><input type="text" class="clean-input" value="Data Structures & Algorithms"></td>
+                <td>
+                  <select class="clean-select clean-select-credits">
+                    <option value="4" selected>4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="clean-select clean-select-grade">
+                    <option value="O" selected>O (10)</option>
+                    <option value="A+">A+ (9)</option>
+                    <option value="A">A (8)</option>
+                    <option value="B+">B+ (7)</option>
+                    <option value="B">B (6)</option>
+                    <option value="C">C (5)</option>
+                    <option value="P">P (4)</option>
+                    <option value="F">F (0)</option>
+                  </select>
+                </td>
+                <td><button class="del-btn" title="Remove course">✕</button></td>
+              </tr>
+              <tr>
+                <td><input type="text" class="clean-input" value="Artificial Intelligence & Neural Nets"></td>
+                <td>
+                  <select class="clean-select clean-select-credits">
+                    <option value="4" selected>4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="clean-select clean-select-grade">
+                    <option value="O">O (10)</option>
+                    <option value="A+" selected>A+ (9)</option>
+                    <option value="A">A (8)</option>
+                    <option value="B+">B+ (7)</option>
+                    <option value="B">B (6)</option>
+                    <option value="C">C (5)</option>
+                    <option value="P">P (4)</option>
+                    <option value="F">F (0)</option>
+                  </select>
+                </td>
+                <td><button class="del-btn" title="Remove course">✕</button></td>
+              </tr>
+              <tr>
+                <td><input type="text" class="clean-input" value="Cloud Native Microservices"></td>
+                <td>
+                  <select class="clean-select clean-select-credits">
+                    <option value="4">4</option>
+                    <option value="3" selected>3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="clean-select clean-select-grade">
+                    <option value="O">O (10)</option>
+                    <option value="A+" selected>A+ (9)</option>
+                    <option value="A">A (8)</option>
+                    <option value="B+">B+ (7)</option>
+                    <option value="B">B (6)</option>
+                    <option value="C">C (5)</option>
+                    <option value="P">P (4)</option>
+                    <option value="F">F (0)</option>
+                  </select>
+                </td>
+                <td><button class="del-btn" title="Remove course">✕</button></td>
+              </tr>
+              <tr>
+                <td><input type="text" class="clean-input" value="Professional Communication & Ethics"></td>
+                <td>
+                  <select class="clean-select clean-select-credits">
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2" selected>2</option>
+                    <option value="1">1</option>
+                  </select>
+                </td>
+                <td>
+                  <select class="clean-select clean-select-grade">
+                    <option value="O" selected>O (10)</option>
+                    <option value="A+">A+ (9)</option>
+                    <option value="A">A (8)</option>
+                    <option value="B+">B+ (7)</option>
+                    <option value="B">B (6)</option>
+                    <option value="C">C (5)</option>
+                    <option value="P">P (4)</option>
+                    <option value="F">F (0)</option>
+                  </select>
+                </td>
+                <td><button class="del-btn" title="Remove course">✕</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- CGPA Visual Score Summary -->
+          <div class="cgpa-summary-card">
+            <div class="gauge-wrap">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" class="gauge-bg-circle"></circle>
+                <circle cx="50" cy="50" r="45" class="gauge-fill-circle" id="cgpaFillCircle"></circle>
+              </svg>
+              <div class="gauge-center-text">
+                <div id="cgpaGaugeText">9.54</div>
+                <span>CGPA</span>
+              </div>
+            </div>
+            <div class="cgpa-details-col">
+              <h4>Calculated Semester Standing</h4>
+              <p>Total Credits: <strong id="totalCreditsDisplay">13</strong> | Grade Points: <strong id="totalPointsDisplay">124.0</strong></p>
+              <div class="academic-honor-badge" id="academicHonorBadge">Dean's Honors (Outstanding) 🌟</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tool 2: Peer Benchmarker Card -->
+        <div class="white-tool-card">
+          <div class="calc-header">
+            <div>
+              <h3>Peer Benchmarker</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.2rem;">Compare yourself with top student profiles</p>
+            </div>
+          </div>
+
+          <div class="archetype-tabs">
+            <button class="archetype-tab-btn active" data-archetype="wizard">The Code Wizard</button>
+            <button class="archetype-tab-btn" data-archetype="champ">Core Engg Champ</button>
+            <button class="archetype-tab-btn" data-archetype="festhead">All-Rounder Fest Head</button>
+          </div>
+
+          <div style="background-color:var(--bg-surface); padding:1.25rem; border-radius:var(--radius-md); border:1px solid var(--border-light); margin-bottom:1.25rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+              <h4 id="benchmarkArchName" style="font-size:1.15rem; color:var(--brand-primary);">The Code Wizard</h4>
+              <span id="benchmarkArchBadge" style="font-family:var(--font-mono); font-size:0.72rem; padding:0.2rem 0.5rem; background:var(--brand-blue-subtle); color:var(--brand-primary); border-radius:var(--radius-full); font-weight:700;">Tech Track · LeetCode 500+</span>
+            </div>
+            <p id="benchmarkAdviceText" style="font-size:0.82rem; color:var(--text-secondary); line-height:1.5;">
+              To benchmark favorably against The Code Wizard: Aim for "O" grades in algorithms and machine learning, and publish 2 cloud-native projects on GitHub.
+            </p>
+          </div>
+
+          <!-- Comparative Benchmark Meters -->
+          <div class="benchmark-meter-group">
+            <!-- Metric 1: CGPA -->
+            <div class="meter-item">
+              <div class="meter-header">
+                <span>Academic CGPA</span>
+                <span id="barCgpaVal" style="font-family:var(--font-mono); font-size:0.78rem;">9.54 vs 9.3</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-bar-target" id="barCgpaTarget" style="width: 93%;"></div>
+                <div class="meter-bar-user" id="barCgpaUser" style="width: 95.4%;"></div>
+              </div>
+            </div>
+
+            <!-- Metric 2: Project Depth -->
+            <div class="meter-item">
+              <div class="meter-header">
+                <span>Practical Project Depth</span>
+                <span id="barProjVal" style="font-family:var(--font-mono); font-size:0.78rem;">88% vs 92%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-bar-target" id="barProjTarget" style="width: 92%;"></div>
+                <div class="meter-bar-user" id="barProjUser" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <!-- Metric 3: Industry Exposure -->
+            <div class="meter-item">
+              <div class="meter-header">
+                <span>Industry Capstone Readiness</span>
+                <span id="barIndVal" style="font-family:var(--font-mono); font-size:0.78rem;">84% vs 85%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-bar-target" id="barIndTarget" style="width: 85%;"></div>
+                <div class="meter-bar-user" id="barIndUser" style="width: 84%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="benchmarker-hint-box">
+            💡 <strong>Pro-Tip:</strong> High grades combined with Adani live industrial capstones significantly boost placement placement odds at KPMG, EY, and IBM!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 9: "FIND YOUR IDEAL PROGRAM" QUIZ (3-STEP CARD QUESTIONER)
+       ========================================================================== -->
+  <section class="section-padding" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag gold-tag">Interactive Academic Matchmaker</span>
+        <h2 class="section-title">Find Your Ideal Program</h2>
+        <p class="section-desc">
+          Answer 3 quick questions about your career goals and interests to find the exact academic degree that matches your aspirations at Adani University.
+        </p>
+      </div>
+
+      <div class="quiz-wrapper-card">
+        <!-- Progress Pills -->
+        <div class="quiz-progress-bar">
+          <div class="quiz-pill active"></div>
+          <div class="quiz-pill"></div>
+          <div class="quiz-pill"></div>
+        </div>
+
+        <!-- Question Step Container -->
+        <div id="quizStepBox">
+          <div class="quiz-q-num" id="quizQNum">Step 01 of 03</div>
+          <h3 class="quiz-q-title" id="quizQTitle">Which of the following topics sparks your passion the most?</h3>
+          <div class="quiz-options-group" id="quizChoicesList">
+            <!-- Dynamic Choice Buttons rendered by script.js -->
+          </div>
+        </div>
+
+        <!-- Dynamic Results Panel (Displayed after Step 3) -->
+        <div class="quiz-result-panel" id="quizResultPanel">
+          <span class="result-congrats-tag">✨ Recommended Academic Match</span>
+          <h3 class="result-degree-title" id="resultDegreeTitle">B.Tech Computer Science & Engineering (AI-ML)</h3>
+          <p class="result-degree-desc" id="resultDegreeDesc">
+            You have a natural affinity for algorithmic problem solving, artificial intelligence, and software architectures.
+          </p>
+
+          <div class="result-stats-box">
+            <div class="result-stat-col">
+              <h6>Faculty Stream</h6>
+              <p id="resultFacultyName">FEST</p>
+            </div>
+            <div class="result-stat-col">
+              <h6>Placement Range</h6>
+              <p id="resultAvgPkg">₹8.5 - 15+ LPA</p>
+            </div>
+            <div class="result-stat-col">
+              <h6>Internship Track</h6>
+              <p>Adani AI Labs & Tech Majors</p>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+            <a href="https://www.adaniuni.ac.in/" target="_blank" rel="noopener" class="btn btn-primary">
+              Apply on Official Portal ↗
+            </a>
+            <button class="btn btn-outline" id="restartQuizBtn">
+              Retake Quiz ↺
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER (AUTHENTIC INFORMATION)
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About & Location -->
+        <div class="footer-col">
+          <img src="assets/images/official-logo.png" alt="Adani University Official Seal" style="height: 48px; margin-bottom: 1.25rem; filter: brightness(0) invert(1);">
+          <p style="margin-bottom: 1rem;">
+            Adani University is a State Private University established under the Gujarat Private Universities Act in 2022, promoted by the Adani Foundation with the core vision of "Nation Building" and "Growth with Goodness".
+          </p>
+          <p style="font-size:0.85rem; color:#94A3B8;">
+            📍 <strong>Campus Location:</strong><br>
+            Shantigram Township, Near Vaishnodevi Circle,<br>
+            S.G. Highway, Ahmedabad - 382421, Gujarat, India.
+          </p>
+        </div>
+
+        <!-- Col 2: Academic Faculties -->
+        <div class="footer-col">
+          <h5>Academic Faculties</h5>
+          <ul class="footer-links">
+            <li><a href="#programs" class="footer-link">FEST (Engineering Sciences)</a></li>
+            <li><a href="#programs" class="footer-link">FMS (Management Sciences)</a></li>
+            <li><a href="#programs" class="footer-link">FoS (Faculty of Sciences)</a></li>
+            <li><a href="#programs" class="footer-link">DDS (Doctoral Studies)</a></li>
+            <li><a href="#placements" class="footer-link">Career Development Cell</a></li>
+            <li><a href="#campus" class="footer-link">Central Library (KOHA)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Navigation -->
+        <div class="footer-col">
+          <h5>Interactive Tools</h5>
+          <ul class="footer-links">
+            <li><a href="#calculator" class="footer-link">CGPA Calculator</a></li>
+            <li><a href="#calculator" class="footer-link">Peer Benchmarker</a></li>
+            <li><a href="#fuel-hub" class="footer-link">The Fuel Hub (Food Finder)</a></li>
+            <li><a href="#quiz" class="footer-link">Ideal Program Matcher</a></li>
+            <li><a href="#campus" class="footer-link">Campus Facilities Guide</a></li>
+            <li><a href="https://www.adaniuni.ac.in/" target="_blank" rel="noopener" class="footer-link">Official Portal ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Admissions -->
+        <div class="footer-col">
+          <h5>Admissions Helpdesk</h5>
+          <p style="margin-bottom: 0.85rem;">
+            For admission queries, campus visits, or corporate recruiter partnerships:
+          </p>
+          <p style="font-size:0.88rem; margin-bottom: 0.4rem;">
+            📞 <strong>Toll Free:</strong> 1800 233 4567<br>
+            ✉️ <strong>Admissions:</strong> admissions@adaniuni.ac.in<br>
+            🌐 <strong>Official Portal:</strong> www.adaniuni.ac.in
+          </p>
+          <div style="margin-top: 1.25rem;">
+            <a href="https://www.adaniuni.ac.in/" target="_blank" rel="noopener" class="btn btn-gold" style="width:100%; font-size:0.85rem;">
+              Visit Official Portal ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Adani University. All Rights Reserved. Shantigram, Ahmedabad, Gujarat.
+        </div>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="https://www.adaniuni.ac.in/" target="_blank" rel="noopener" style="color:#94A3B8; text-decoration:none;">Privacy Policy</a>
+          <a href="https://www.adaniuni.ac.in/" target="_blank" rel="noopener" style="color:#94A3B8; text-decoration:none;">UGC Disclosures</a>
+          <a href="https://www.adaniuni.ac.in/" target="_blank" rel="noopener" style="color:#94A3B8; text-decoration:none;">Mandatory Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS & DIALOGS
+       ========================================================================== -->
+
+  <!-- 1. Campus Facility Detail Modal -->
+  <div class="modal-backdrop" id="facilityModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeFacilityModal">✕</button>
+      <img src="assets/images/real-classroom.jpg" alt="Facility Detail" class="modal-img-banner" id="facilityModalImg">
+      <div class="modal-padding">
+        <span class="section-tag" id="facilityModalCategory" style="margin-bottom: 0.65rem;">Academic Technology</span>
+        <h3 id="facilityModalTitle" style="font-size:1.6rem; margin-bottom:0.75rem; color:var(--brand-primary);">Facility Name</h3>
+        <p id="facilityModalDesc" style="color:var(--text-secondary); line-height:1.65; margin-bottom:1.5rem; font-size:0.95rem;">
+          Detailed information about this world-class campus amenity at Shantigram.
+        </p>
+        <h5 style="color:var(--brand-gold); margin-bottom:0.6rem; font-size:0.85rem; font-family:var(--font-mono); text-transform:uppercase;">
+          Core Specifications:
+        </h5>
+        <div id="facilityModalSpecs" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem;">
+          <!-- Injected dynamically -->
+        </div>
+        <button class="btn btn-primary" onclick="document.getElementById('facilityModal').classList.remove('open')" style="width:100%;">
+          Close Facility View
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Academic Curriculum Drawer Modal -->
+  <div class="modal-backdrop" id="programModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeProgramModal">✕</button>
+      <div class="modal-padding">
+        <h3 id="programModalTitle" style="font-size:1.55rem; color:var(--brand-primary); margin-bottom:1rem; padding-right:2rem;">
+          Curriculum Overview
+        </h3>
+        <div id="programModalBody">
+          <!-- Injected dynamically by script.js -->
+        </div>
+        <div style="margin-top:1.5rem; display:flex; gap:1rem;">
+          <a href="https://www.adaniuni.ac.in/" target="_blank" rel="noopener" class="btn btn-primary" style="flex:1;">
+            Apply on Official Portal ↗
+          </a>
+          <button class="btn btn-outline" onclick="document.getElementById('programModal').classList.remove('open')">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Photo Lightbox Modal -->
+  <div class="lightbox-backdrop" id="lightboxModal">
+    <button class="modal-close" id="closeLightbox" style="position:fixed; top:2rem; right:2rem; background:rgba(255,255,255,0.2); color:#fff; border:none;">✕</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="Enlarged campus view" id="lightboxImg">
+    </div>
+    <div id="lightboxCaption" style="color:#FFFFFF; margin-top:1rem; font-size:1.1rem; font-family:var(--font-heading); text-align:center;">
+      Campus Photo
+    </div>
+  </div>
+
+  <!-- Toast Notification Utility -->
+  <div class="toast-msg" id="toastMsg">Notification message</div>
+
+  <!-- JavaScript Bundle -->
+  <script src="script.js"></script>
+</body>
+</html>
